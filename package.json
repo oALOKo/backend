@@ -2,14 +2,20 @@
   "name": "aloo_backend",
   "version": "1.0.0",
   "description": "backend project",
+  "_note_": "we set the type as module so that we can use import and export in our code because normally node.js does not support import and export but by setting the type as module we can use import and export in our codes",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "_note_": "by typing the below line,we basically are telling nodemon to restart our index.js script everytime there is a chnge because normally wwe have to shut the server and restart it but nodmon does that for us",
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "js",
     "backend"
   ],
   "author": "aloo",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
 }
